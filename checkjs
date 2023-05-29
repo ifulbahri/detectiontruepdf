@@ -1,0 +1,8 @@
+<?php
+$filecontent = file_get_contents("test.pdf");
+if (preg_match("/^%/JavaScript/", $filecontent)) {
+    echo "Warning js content";
+} else {
+    echo "Safe";
+}
+?>
