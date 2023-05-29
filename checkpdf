@@ -1,0 +1,8 @@
+<?php
+$filecontent = file_get_contents("test.pdf");
+if (preg_match("/^%PDF-1.7/", $filecontent)) {
+    echo "Valid pdf";
+} else {
+    echo "In Valid pdf";
+}
+?>
